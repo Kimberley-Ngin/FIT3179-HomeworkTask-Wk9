@@ -22,7 +22,9 @@
           },
           "key": "state",
           "fields": [
-            "proportion_burnt"
+            "proportion_burnt",
+            "forest_area_burnt",
+            "total_forest_area"
           ]
         }
       }
