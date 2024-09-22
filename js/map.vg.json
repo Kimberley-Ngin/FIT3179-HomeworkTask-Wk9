@@ -7,22 +7,22 @@
       "type": "mercator"
     },
     "data": {
-      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-HomeworkTask-Wk9/refs/heads/main/data/australia_clip.json",
+      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-HomeworkTask-Wk9/refs/heads/main/data/AUS_2016_AUST.json",
       "format": {
         "type": "topojson",
-        "feature": "ne_110m_admin_0_countries"
+        "feature": "AUS_2016_AUST"
       }
     },
     "transform": [
       {
-        "lookup": "properties.NAME",
+        "lookup": "properties.AUS_NAME16",
         "from": {
           "data": {
-            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
+            "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-HomeworkTask-Wk9/refs/heads/main/data/forest_area_burnt_2019_20.csv"
           },
-          "key": "Country",
+          "key": "state",
           "fields": [
-            "Active"
+            "total_forest"
           ]
         }
       }
@@ -32,17 +32,17 @@
     },
     "encoding": {
       "color": {
-        "field": "Active",
+        "field": "total_forest",
         "type": "quantitative"
       },
       "tooltip": [
         {
           "field": "properties.NAME",
           "type": "nominal",
-          "title": "Country"
+          "title": "state"
         },
         {
-          "field": "Active",
+          "field": "total_forest",
           "type": "quantitative"
         }
       ]
