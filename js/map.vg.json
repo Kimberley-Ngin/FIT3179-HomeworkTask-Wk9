@@ -28,7 +28,8 @@
       }
     ],
     "mark": {
-      "type": "geoshape"
+      "type": "geoshape",
+      "stroke": "white"
     },
     "encoding": {
       "color": {
