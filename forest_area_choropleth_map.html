@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  <script src="choropleth.js"></script>
+</head>
+
+
+<body>
+    <center> 
+        <h1> Visualisation of the 2019-20 Australian Bushfires </h1>
+    </center>
+    <h2> Domain </h2>
+    <p> The domain of the visualisation is natural disasters, specifically bushfires. </p>
+    <h2> Dataset </h2>
+    <p> 
+        The dataset is taken from <a href="https://www.agriculture.gov.au/abares/forestsaustralia/forest-data-maps-and-tools/data-by-topic/fire 
+        " target="_blank">Forests Australia</a>.
+    </p>
+    <p>
+        The first attribute is state which is of type nominal and represents a grouping.
+    </p>
+    <p>
+        The second attribute is proportion of total forest area that has been burnt. The attribute type 
+        is quantitative as it is numerical and we can perform arithmetic operations with it. 
+    </p>
+    <h2> Data Transformations </h2>
+    <p> No data transformations were applied. A normalised field (proportion as %) was already present. </p>
+    <h2> Justification for Idiom Type </h2>
+    <p>
+        I have used a choropleth map to effectively show a numerical attribute for each geographic region (state). 
+        The values have importantly been normalised by total forest area for each state. The choropleth map allows us
+        to easily and effectively identify and compare geographic regions and how they have been affected by the 
+        2019-20 bushfire season.
+    </p>
+    <center> 
+        <div id="choropleth_map"></div>
+    </center>
+  
+</body>
+</html>
