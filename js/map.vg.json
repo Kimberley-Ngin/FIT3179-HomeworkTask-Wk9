@@ -53,14 +53,14 @@
           "title": "Forest Area Burnt (%)"
         },
         {
-          "field": "total_forest_burnt",
+          "field": "forest_area_burnt",
           "type": "quantitative",
-          "title": "Forest Area Burnt ('000 hectares)"
+          "title": "Forest Area Burnt (hectares)"
         },
         {
           "field": "total_forest_area",
           "type": "quantitative",
-          "title": "Total Forest Area ('000 hectares)"
+          "title": "Total Forest Area (hectares)"
         }
       ]
     }
