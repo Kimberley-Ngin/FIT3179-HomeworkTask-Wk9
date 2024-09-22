@@ -22,7 +22,7 @@
           },
           "key": "state",
           "fields": [
-            "total_forest"
+            "total_forest_burnt"
           ]
         }
       }
@@ -32,14 +32,14 @@
     },
     "encoding": {
       "color": {
-        "field": "total_forest",
+        "field": "total_forest_burnt",
         "type": "quantitative",
         "scale": {
         "type": "threshold",
-        "domain": [100, 150, 200, 225, 250, 300, 350, 1000, 1200],
+        "domain": [0, 250, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3250, 3500, 3750, 4000, 4250, 4500, 4750, 5000, 5250],
         "scheme": "goldorange"
       },
-      "legend": {"title": "Total Forest Area Burnt ('000 hectares)"}
+      "legend": {"title": "Total Forest Area ('000 hectares)"}
       },
       "tooltip": [
         {
@@ -48,7 +48,7 @@
           "title": "State"
         },
         {
-          "field": "total_forest",
+          "field": "total_forest_burnt",
           "type": "quantitative",
           "title": "Total Forest Area"
         }

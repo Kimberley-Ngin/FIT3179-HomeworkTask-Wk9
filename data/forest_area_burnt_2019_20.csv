@@ -1,9 +1,9 @@
-state,total_forest
-Australian Capital Territory,83
-New South Wales,5123
-Northern Territory,0
-Queensland,514
-South Australia,137
-Tasmania,30
-Victoria,1457
-Western Australia,1144
+state,total_forest_burnt,proportion_burnt
+Australian Capital Territory,83,58
+New South Wales,5123,25
+Northern Territory,0,0
+Queensland,514,1
+South Australia,137,2.7
+Tasmania,30,0.8
+Victoria,1457,18
+Western Australia,1144,5.5
