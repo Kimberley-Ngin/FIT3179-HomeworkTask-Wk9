@@ -7,15 +7,15 @@
       "type": "mercator"
     },
     "data": {
-      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-HomeworkTask-Wk9/refs/heads/main/data/AUS_2016_AUST.json",
+      "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-HomeworkTask-Wk9/refs/heads/main/data/STE_2016_AUST.json",
       "format": {
         "type": "topojson",
-        "feature": "AUS_2016_AUST"
+        "feature": "STE_2016_AUST"
       }
     },
     "transform": [
       {
-        "lookup": "properties.AUS_NAME16",
+        "lookup": "properties.STE_NAME16",
         "from": {
           "data": {
             "url": "https://raw.githubusercontent.com/Kimberley-Ngin/FIT3179-HomeworkTask-Wk9/refs/heads/main/data/forest_area_burnt_2019_20.csv"
@@ -33,17 +33,24 @@
     "encoding": {
       "color": {
         "field": "total_forest",
-        "type": "quantitative"
+        "type": "quantitative",
+        "scale": {
+        "type": "threshold",
+        "domain": [100, 150, 200, 225, 250, 300, 350, 1000, 1200],
+        "scheme": "goldorange"
+      },
+      "legend": {"title": "Total Forest Area Burnt ('000 hectares)"}
       },
       "tooltip": [
         {
-          "field": "properties.NAME",
+          "field": "properties.STE_NAME16",
           "type": "nominal",
-          "title": "state"
+          "title": "State"
         },
         {
           "field": "total_forest",
-          "type": "quantitative"
+          "type": "quantitative",
+          "title": "Total Forest Area"
         }
       ]
     }
