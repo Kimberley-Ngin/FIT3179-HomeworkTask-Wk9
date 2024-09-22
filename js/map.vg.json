@@ -63,5 +63,8 @@
           "title": "Total Forest Area (hectares)"
         }
       ]
+    },
+    "config": {
+    "font": "Times New Roman"
     }
   }
